@@ -1,0 +1,121 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(228, 93, 93);
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav'
+        'bckimg bckimg bckimg taco taco'
+        'bckimg bckimg bckimg quesdilla quesdilla'
+        'emoji1 emoji2 emoji3 emoji4 emoji5'
+        'imgfooter imgfooter imgfooter imgfooter imgfooterimgfooter';
+    gap: 10px;
+
+    padding: 10px;
+
+}
+
+    
+.item1 {
+    background-color: lightpink;
+    grid-area: nav;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    font-weight: bold;
+    padding: 0 20px;
+    align-items: center;
+
+}
+
+.item2 {
+    grid-area: bckimg;
+    background-image: url("images/taco.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* background-repeat: no-repeat; */
+    /* width: 300px;*/
+    height: 300px;
+    padding-right: 0%;
+
+
+}
+
+h4 {
+
+    border: 2px beige;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+    color: rgb(174, 37, 128);
+    font-size: 40px;
+    background-color: yellowgreen;
+
+}
+
+.txt {
+    border: 2px rgb(220, 245, 240) solid;
+    position: fixed;
+    top: 250px;
+    left: 100px;
+    background-color: yellowgreen;
+    color: rgba(174, 37, 128, );
+    font-size: 30px;
+
+
+}
+
+.item3 {
+    grid-area: taco;
+    background-color: yellowgreen;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+
+}
+
+.item5 {
+    grid-area: quesdilla;
+    background-color: yellowgreen;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+
+
+}
+
+.emojiitem1 {
+    grid-area: emoji1;
+    display: inline;
+
+}
+
+.emojiitem2 {
+    grid-area: emoji2;
+    display: inline;
+
+}
+
+.emojiitem3 {
+    grid-area: emoji3;
+    display: inline;
+}
+
+.footer-img {
+    grid-area: imgfooter;
+    height: 10px;
+
+
+}
+
+.ft {
+    height: 100px;
+}
